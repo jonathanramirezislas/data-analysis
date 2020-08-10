@@ -6,6 +6,7 @@ Example code for working with dictionary keys
 simple_dict = {"Joe" : 1, "Scott" : 2, "John" : 3}
 ##print(simple_dict)
 
+#arise a Error
 #bad_dict = {["Joe", "Warren"] : 1, ["Scott", "Rixner"] : 2, ["John", "Greiner"] : 3}
 #print(bad_dict)
 
@@ -14,11 +15,11 @@ good_dict = {("Joe", "Warren") : 1, ("Scott", "Rixner") : 2, ("John", "Greiner")
 
 
 # Examples of dictionary lookup
-#print(simple_dict["Joe"])
-#print(simple_dict["Scott"])
-#print(simple_dict["Stephen"])
-#print(good_dict[("Joe", "Warren")])
-#print(good_dict[("John", "Greiner")])
+print(simple_dict["Joe"])
+print(simple_dict["Scott"])
+print(simple_dict["Stephen"])
+print(good_dict[("Joe", "Warren")])
+print(good_dict[("John", "Greiner")])
 
 
 
@@ -36,10 +37,10 @@ def lookup(my_dict, my_key, default_value=None):
     else:
         return default_value
 
-#simple_dict = {"Joe" : 1, "Scott" : 2, "John" : 3}
-#print(lookup(simple_dict, "Joe", -1))
-#print(lookup(simple_dict, "Stephen", -1))
-#print(lookup(simple_dict, "Stephen"))
+simple_dict = {"Joe" : 1, "Scott" : 2, "John" : 3}
+print(lookup(simple_dict, "Joe", -1))
+print(lookup(simple_dict, "Stephen", -1))
+print(lookup(simple_dict, "Stephen"))
 
 
 
@@ -48,10 +49,7 @@ def lookup(my_dict, my_key, default_value=None):
 
 
 # Built-in Python dictionary method get() in place of lookup()
-#simple_dict = {"Joe" : 1, "Scott" : 2, "John" : 3}
-#print(simple_dict.get("Joe", -1))
-#print(simple_dict.get("Stephen", -1))
-#print(simple_dict.get("Stephen"))		# default value if parameter is omitted is None
-
-# Note that we can acheive the same effect in lookup() 
-# via default parameter definition of the form "default_value = None"
+simple_dict = {"Joe" : 1, "Scott" : 2, "John" : 3}
+print(simple_dict.get("Joe", -1))
+print(simple_dict.get("Stephen", -1))
+print(simple_dict.get("Stephen"))		# default value if parameter is omitted is None
