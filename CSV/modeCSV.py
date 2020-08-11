@@ -23,6 +23,7 @@ def print_table(table):
     """
     Print out table, which must be a list
     of lists, in a nicely formatted way.
+    
     """
     for row in table:
         # Header column left justified
