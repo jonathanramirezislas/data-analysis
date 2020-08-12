@@ -20,6 +20,7 @@ print("sorted data:", data)
 random.shuffle(data)
 print("shuffled data:", data)
 
+#en eset caso creara otra lista con data ordenado pero data se mantendra intacta
 # Use sorted to sort the list
 newdata = sorted(data)
 print("data after sorted:", data)
@@ -29,6 +30,7 @@ print("returned from sorted:", newdata)
 datatup = tuple(data)
 print("data tuple:", datatup)
 
+#tuple no puede usar la funcion sort
 # Sort the tuple of numbers
 # datatup.sort()
 print("tuple after sort:", datatup)
@@ -38,6 +40,7 @@ newdatatup = sorted(datatup)
 print("returned from sorted:", newdatatup)
 
 # Create a dictionary of squares (dictionary comprehension)
+#kye: cuadrado de key = > example {1 : 1**2 , 2: 2**2, ...
 datamap = {key: key ** 2 for key in datatup}
 print("data dictionary:", datamap)
 
