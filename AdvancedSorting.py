@@ -23,6 +23,7 @@ print("data tuples:", datatups)
 datatups.sort()
 print("sorted data tuples:", datatups)
 
+#Se ordenara por el segundo elemento de la tupla [(1,2),(1,3)..] 
 datatups.sort(key=lambda pair: pair[1])
 print("sorted by second item:", datatups)
 
